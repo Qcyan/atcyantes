@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "esnext",
+    "target": "es6",
+    "noImplicitAny": false,
+    "declaration": true,
+    "sourceMap": true,
+    "lib": ["es6", "DOM", "DOM.Iterable"],
+    "allowSyntheticDefaultImports": true,
+    "types": ["unplugin-vue-define-options"]
+  },
+  "include": ["packages", "typings"],
+  "exclude": ["node_modules", "**/dist"]
+}
