@@ -1,7 +1,7 @@
 {
-  "name": "@cyantes/shepherd",
-  "version": "1.0.5",
-  "description": "shepherd",
+  "name": "@cyantes/utils",
+  "version": "1.0.0",
+  "description": "utils",
   "main": "index.js",
   "private ": true,
   "scripts": {
@@ -9,8 +9,5 @@
     "build": "father-build"
   },
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "shepherd.js": "^11.0.1"
-  }
+  "license": "ISC"
 }
