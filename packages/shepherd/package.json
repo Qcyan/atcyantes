@@ -1,12 +1,13 @@
 {
   "name": "@cyantes/shepherd",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "shepherd",
   "main": "index.js",
   "private ": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "father-build"
+    "build-father": "father-build",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",
