@@ -1,38 +1,14 @@
-import Shepherd from 'shepherd.js'
-import defaultConfig from './default-config'
+// 引入封装好的组件
+import PenkButton from "./components/PenkButton.vue";
 
-const install = (Vue:any):void => {
-    // if (install.installed) return
-    // install.installed = true
-    Vue.prototype.$shepherd = (props = {}) => {
-        // 设置初始化参数
-        const newProps:Object = {
-            ...defaultConfig,
-            ...props
-        }
-        return new Shepherd.Tour(newProps)
-    }
-}
+let arr = [PenkButton]; // 如果有多个其它组件,都可以写到这个数组里
 
-/*
-if (typeof window !== 'undefined' && window.Vue) {
-    install(window.Vue)
-}
-*/
+// 批量组件注册
+const install = function (Vue: any) {
+    arr.forEach((com) => {
+        Vue.component(com.name, com);
+    });
+};
 
-// 通过函数的形式使用
-const shepherd = (props = {}) => {
-    const newProps:Object  = {
-        ...defaultConfig,
-        ...props
-    }
-    return new Shepherd.Tour(newProps)
-}
+export default install; // 这个方法使用的时候可以被use调用
 
-export {
-    shepherd
-}
-export default {
-    install,
-    version: '1.0.0'
-}

@@ -1,6 +1,6 @@
 {
   "name": "@cyantes/shepherd",
-  "version": "1.0.7",
+  "version": "1.0.5",
   "description": "shepherd",
   "main": "index.ts",
   "types": "index.d.ts",
@@ -10,7 +10,6 @@
   "private ": true,
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "father-build",
     "build:vite": "vite build"
   },
@@ -19,13 +18,7 @@
   "devDependencies": {
     "shepherd.js": "^11.0.1"
   },
-  "main": "./dist/shepherd.umd.js",
-  "module": "./dist/shepherd.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/shepherd.es.js",
-      "require": "./dist/shepherd.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
+  "dependencies": {
+    "@cyantes/shepherd": "link:D:/qiushiqing/cyan/atcyantes/packages/shepherd"
   }
 }
