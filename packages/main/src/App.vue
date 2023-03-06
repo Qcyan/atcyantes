@@ -1,10 +1,11 @@
 <script setup>
-import test from 'shepherd.js'
-console.log(test)
+
 </script>
 
 <template>
+	测试
 	<PenkButton></PenkButton>
+	<span class="shephard-test">全局样式引入</span>
 </template>
 
 <style scoped>

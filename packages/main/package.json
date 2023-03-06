@@ -15,9 +15,6 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "shepherd.js": "^11.0.1"
-  },
   "dependencies": {
     "@cyantes/shepherd": "link:D:/qiushiqing/cyan/atcyantes/packages/shepherd"
   }

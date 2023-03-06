@@ -2,9 +2,7 @@
   "name": "@cyantes/shepherd",
   "version": "1.0.7",
   "description": "shepherd",
-  "main": "index.ts",
   "types": "index.d.ts",
-  "module": "index.ts",
   "unpkg": "index.js",
   "jsdelivr": "index.js",
   "private ": true,
@@ -16,7 +14,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "shepherd.js": "^11.0.1"
   },
   "main": "./dist/shepherd.umd.js",

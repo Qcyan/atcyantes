@@ -36,19 +36,21 @@ importers:
   packages/main:
     specifiers:
       '@cyantes/shepherd': link:D:/qiushiqing/cyan/atcyantes/packages/shepherd
-      dist: link:D:/qiushiqing/cyan/atcyantes/packages/shepherd/dist
       shepherd.js: ^11.0.1
     dependencies:
       '@cyantes/shepherd': link:../shepherd
-      dist: link:../shepherd/dist
     devDependencies:
       shepherd.js: registry.npmmirror.com/shepherd.js/11.0.1
 
   packages/shepherd:
     specifiers:
+      element-plus: ^2.2.32
       shepherd.js: ^11.0.1
-    devDependencies:
+      vue: ^3.2.45
+    dependencies:
+      element-plus: registry.npmmirror.com/element-plus/2.2.32_vue@3.2.45
       shepherd.js: registry.npmmirror.com/shepherd.js/11.0.1
+      vue: registry.npmmirror.com/vue/3.2.45
 
   packages/utils:
     specifiers: {}
@@ -4406,7 +4408,6 @@ packages:
     name: deepmerge
     version: 4.2.2
     engines: {node: '>=0.10.0'}
-    dev: true
 
   registry.npmmirror.com/defaults/1.0.4:
     resolution: {integrity: sha512-eFuaLoy/Rxalv2kr+lqMlUnrDWV+3j4pljOIJgLIhI058IQfWJ7vXhyEIHu+HtC738klGALYxOKDO0bQP3tg8A==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/defaults/-/defaults-1.0.4.tgz}
@@ -8712,7 +8713,6 @@ packages:
     dependencies:
       '@floating-ui/dom': registry.npmmirror.com/@floating-ui/dom/1.1.0
       deepmerge: registry.npmmirror.com/deepmerge/4.2.2
-    dev: true
 
   registry.npmmirror.com/side-channel/1.0.4:
     resolution: {integrity: sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw==, registry: http://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/side-channel/-/side-channel-1.0.4.tgz}

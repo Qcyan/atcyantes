@@ -1,6 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import './assets/main.css'
+import ElementPlus from "element-plus";
+import "element-plus/dist/index.css";
 
-createApp(App).mount('#app')
+import shepherd from '@cyantes/shepherd'
+import '@cyantes/shepherd/dist/style.css'
+
+const app = createApp(App)
+
+app.use(shepherd)
+app.use(ElementPlus)
+app.mount('#app')
