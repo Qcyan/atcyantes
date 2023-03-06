@@ -1,0 +1,29 @@
+{
+  "name": "@cyantes/shepherd",
+  "version": "1.0.7",
+  "description": "shepherd",
+  "types": "index.d.ts",
+  "unpkg": "index.js",
+  "jsdelivr": "index.js",
+  "private ": true,
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "father-build",
+    "build:vite": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shepherd.js": "^11.0.1"
+  },
+  "main": "./dist/shepherd.umd.js",
+  "module": "./dist/shepherd.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/shepherd.es.js",
+      "require": "./dist/shepherd.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  }
+}
