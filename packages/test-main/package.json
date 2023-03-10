@@ -1,5 +1,5 @@
 {
-  "name": "@cyantes/shepherd",
+  "name": "@cyantes/test-main",
   "version": "1.0.5",
   "description": "shepherd",
   "main": "index.ts",
@@ -16,6 +16,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@cyantes/shepherd": "link:D:/qiushiqing/cyan/atcyantes/packages/shepherd"
+    "@cyantes/shepherd": "1.0.9"
   }
 }

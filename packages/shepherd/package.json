@@ -1,19 +1,22 @@
 {
   "name": "@cyantes/shepherd",
-  "version": "1.0.7",
-  "description": "shepherd",
-  "types": "index.d.ts",
-  "unpkg": "index.js",
-  "jsdelivr": "index.js",
+  "version": "1.0.9",
+  "description": "对插件进行二次封装",
+  "files": [
+    "dist",
+    "dist/**"
+  ],
   "private ": true,
+  "keywords": [],
+  "author": "cyan",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "father-build",
-    "build:vite": "vite build"
+    "build:vite": "vite build",
+    "type-check": "vue-tsc --noEmit"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "shepherd.js": "^11.0.1"
   },

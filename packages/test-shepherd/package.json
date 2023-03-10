@@ -1,5 +1,5 @@
 {
-  "name": "@cyantes/shepherd",
+  "name": "@cyantes/test-shepherd",
   "version": "1.0.7",
   "description": "shepherd",
   "types": "index.d.ts",
